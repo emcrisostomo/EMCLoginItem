@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		901E56D01916CC1400D47DF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E56CF1916CC1400D47DF1 /* Cocoa.framework */; };
+		901E56DA1916CC1500D47DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901E56D81916CC1500D47DF1 /* InfoPlist.strings */; };
+		901E56DE1916CC1500D47DF1 /* EMCLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E56DD1916CC1500D47DF1 /* EMCLoginItem.m */; };
+		901E56E51916CC1500D47DF1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E56E41916CC1500D47DF1 /* XCTest.framework */; };
+		901E56E61916CC1500D47DF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E56CF1916CC1400D47DF1 /* Cocoa.framework */; };
+		901E56E91916CC1500D47DF1 /* EMCLoginItem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E56CC1916CC1400D47DF1 /* EMCLoginItem.framework */; };
+		901E56EF1916CC1500D47DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901E56ED1916CC1500D47DF1 /* InfoPlist.strings */; };
+		901E56F11916CC1500D47DF1 /* EMCLoginItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E56F01916CC1500D47DF1 /* EMCLoginItemTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		901E56E71916CC1500D47DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 901E56C31916CC1400D47DF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 901E56CB1916CC1400D47DF1;
+			remoteInfo = EMCLoginItem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		901E56CC1916CC1400D47DF1 /* EMCLoginItem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMCLoginItem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901E56CF1916CC1400D47DF1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		901E56D21916CC1400D47DF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		901E56D31916CC1400D47DF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		901E56D41916CC1400D47DF1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		901E56D71916CC1400D47DF1 /* EMCLoginItem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMCLoginItem-Info.plist"; sourceTree = "<group>"; };
+		901E56D91916CC1500D47DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		901E56DB1916CC1500D47DF1 /* EMCLoginItem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EMCLoginItem-Prefix.pch"; sourceTree = "<group>"; };
+		901E56DC1916CC1500D47DF1 /* EMCLoginItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMCLoginItem.h; sourceTree = "<group>"; };
+		901E56DD1916CC1500D47DF1 /* EMCLoginItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMCLoginItem.m; sourceTree = "<group>"; };
+		901E56E31916CC1500D47DF1 /* EMCLoginItemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMCLoginItemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		901E56E41916CC1500D47DF1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		901E56EC1916CC1500D47DF1 /* EMCLoginItemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMCLoginItemTests-Info.plist"; sourceTree = "<group>"; };
+		901E56EE1916CC1500D47DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		901E56F01916CC1500D47DF1 /* EMCLoginItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMCLoginItemTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		901E56C81916CC1400D47DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901E56D01916CC1400D47DF1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901E56E01916CC1500D47DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901E56E91916CC1500D47DF1 /* EMCLoginItem.framework in Frameworks */,
+				901E56E61916CC1500D47DF1 /* Cocoa.framework in Frameworks */,
+				901E56E51916CC1500D47DF1 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		901E56C21916CC1400D47DF1 = {
+			isa = PBXGroup;
+			children = (
+				901E56D51916CC1400D47DF1 /* EMCLoginItem */,
+				901E56EA1916CC1500D47DF1 /* EMCLoginItemTests */,
+				901E56CE1916CC1400D47DF1 /* Frameworks */,
+				901E56CD1916CC1400D47DF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		901E56CD1916CC1400D47DF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				901E56CC1916CC1400D47DF1 /* EMCLoginItem.framework */,
+				901E56E31916CC1500D47DF1 /* EMCLoginItemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		901E56CE1916CC1400D47DF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				901E56CF1916CC1400D47DF1 /* Cocoa.framework */,
+				901E56E41916CC1500D47DF1 /* XCTest.framework */,
+				901E56D11916CC1400D47DF1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		901E56D11916CC1400D47DF1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				901E56D21916CC1400D47DF1 /* Foundation.framework */,
+				901E56D31916CC1400D47DF1 /* CoreData.framework */,
+				901E56D41916CC1400D47DF1 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		901E56D51916CC1400D47DF1 /* EMCLoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				901E56DC1916CC1500D47DF1 /* EMCLoginItem.h */,
+				901E56DD1916CC1500D47DF1 /* EMCLoginItem.m */,
+				901E56D61916CC1400D47DF1 /* Supporting Files */,
+			);
+			path = EMCLoginItem;
+			sourceTree = "<group>";
+		};
+		901E56D61916CC1400D47DF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				901E56D71916CC1400D47DF1 /* EMCLoginItem-Info.plist */,
+				901E56D81916CC1500D47DF1 /* InfoPlist.strings */,
+				901E56DB1916CC1500D47DF1 /* EMCLoginItem-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		901E56EA1916CC1500D47DF1 /* EMCLoginItemTests */ = {
+			isa = PBXGroup;
+			children = (
+				901E56F01916CC1500D47DF1 /* EMCLoginItemTests.m */,
+				901E56EB1916CC1500D47DF1 /* Supporting Files */,
+			);
+			path = EMCLoginItemTests;
+			sourceTree = "<group>";
+		};
+		901E56EB1916CC1500D47DF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				901E56EC1916CC1500D47DF1 /* EMCLoginItemTests-Info.plist */,
+				901E56ED1916CC1500D47DF1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		901E56C91916CC1400D47DF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		901E56CB1916CC1400D47DF1 /* EMCLoginItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901E56F41916CC1500D47DF1 /* Build configuration list for PBXNativeTarget "EMCLoginItem" */;
+			buildPhases = (
+				901E56C71916CC1400D47DF1 /* Sources */,
+				901E56C81916CC1400D47DF1 /* Frameworks */,
+				901E56C91916CC1400D47DF1 /* Headers */,
+				901E56CA1916CC1400D47DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMCLoginItem;
+			productName = EMCLoginItem;
+			productReference = 901E56CC1916CC1400D47DF1 /* EMCLoginItem.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		901E56E21916CC1500D47DF1 /* EMCLoginItemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 901E56F71916CC1500D47DF1 /* Build configuration list for PBXNativeTarget "EMCLoginItemTests" */;
+			buildPhases = (
+				901E56DF1916CC1500D47DF1 /* Sources */,
+				901E56E01916CC1500D47DF1 /* Frameworks */,
+				901E56E11916CC1500D47DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				901E56E81916CC1500D47DF1 /* PBXTargetDependency */,
+			);
+			name = EMCLoginItemTests;
+			productName = EMCLoginItemTests;
+			productReference = 901E56E31916CC1500D47DF1 /* EMCLoginItemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		901E56C31916CC1400D47DF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Enrico M. Crisostomo";
+				TargetAttributes = {
+					901E56E21916CC1500D47DF1 = {
+						TestTargetID = 901E56CB1916CC1400D47DF1;
+					};
+				};
+			};
+			buildConfigurationList = 901E56C61916CC1400D47DF1 /* Build configuration list for PBXProject "EMCLoginItem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 901E56C21916CC1400D47DF1;
+			productRefGroup = 901E56CD1916CC1400D47DF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				901E56CB1916CC1400D47DF1 /* EMCLoginItem */,
+				901E56E21916CC1500D47DF1 /* EMCLoginItemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		901E56CA1916CC1400D47DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901E56DA1916CC1500D47DF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901E56E11916CC1500D47DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901E56EF1916CC1500D47DF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		901E56C71916CC1400D47DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901E56DE1916CC1500D47DF1 /* EMCLoginItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		901E56DF1916CC1500D47DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901E56F11916CC1500D47DF1 /* EMCLoginItemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		901E56E81916CC1500D47DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 901E56CB1916CC1400D47DF1 /* EMCLoginItem */;
+			targetProxy = 901E56E71916CC1500D47DF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		901E56D81916CC1500D47DF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901E56D91916CC1500D47DF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		901E56ED1916CC1500D47DF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				901E56EE1916CC1500D47DF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		901E56F21916CC1500D47DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		901E56F31916CC1500D47DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		901E56F51916CC1500D47DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMCLoginItem/EMCLoginItem-Prefix.pch";
+				INFOPLIST_FILE = "EMCLoginItem/EMCLoginItem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		901E56F61916CC1500D47DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMCLoginItem/EMCLoginItem-Prefix.pch";
+				INFOPLIST_FILE = "EMCLoginItem/EMCLoginItem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		901E56F81916CC1500D47DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMCLoginItem.framework/Versions/A/EMCLoginItem";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMCLoginItem/EMCLoginItem-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EMCLoginItemTests/EMCLoginItemTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		901E56F91916CC1500D47DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EMCLoginItem.framework/Versions/A/EMCLoginItem";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EMCLoginItem/EMCLoginItem-Prefix.pch";
+				INFOPLIST_FILE = "EMCLoginItemTests/EMCLoginItemTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		901E56C61916CC1400D47DF1 /* Build configuration list for PBXProject "EMCLoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901E56F21916CC1500D47DF1 /* Debug */,
+				901E56F31916CC1500D47DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		901E56F41916CC1500D47DF1 /* Build configuration list for PBXNativeTarget "EMCLoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901E56F51916CC1500D47DF1 /* Debug */,
+				901E56F61916CC1500D47DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		901E56F71916CC1500D47DF1 /* Build configuration list for PBXNativeTarget "EMCLoginItemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				901E56F81916CC1500D47DF1 /* Debug */,
+				901E56F91916CC1500D47DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 901E56C31916CC1400D47DF1 /* Project object */;
+}
