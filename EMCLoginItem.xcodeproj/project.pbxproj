@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901D3A891916E72000961DA2 /* EMCLoginItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 901E56DC1916CC1500D47DF1 /* EMCLoginItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		901E56D01916CC1400D47DF1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901E56CF1916CC1400D47DF1 /* Cocoa.framework */; };
 		901E56DA1916CC1500D47DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 901E56D81916CC1500D47DF1 /* InfoPlist.strings */; };
 		901E56DE1916CC1500D47DF1 /* EMCLoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E56DD1916CC1500D47DF1 /* EMCLoginItem.m */; };
@@ -151,6 +152,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901D3A891916E72000961DA2 /* EMCLoginItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

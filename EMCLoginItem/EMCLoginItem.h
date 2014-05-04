@@ -20,6 +20,10 @@
 - (BOOL)isLoginItem;
 - (void)addLoginItem;
 - (void)removeLoginItem;
+- (void)addAfterLast;
+- (void)addAfterFirst;
+- (void)addAfterItemWithPath:(NSString *)path;
+- (void)addAfterBundle:(NSBundle *)bundle;
 
 + (instancetype)loginItem;
 + (instancetype)loginItemWithBundle:(NSBundle *)bundle;

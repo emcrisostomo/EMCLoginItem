@@ -14,6 +14,8 @@
 @implementation EMCLoginItem
 
 CFURLRef url;
+LSSharedFileListItemRef itemBeforeInsertion = nil;
+CFURLRef itemBeforePath = nil;
 
 - (id)init
 {
@@ -74,6 +76,7 @@ CFURLRef url;
 - (void)initHelper:(NSString *)appPath
 {
     url = (CFURLRef)CFBridgingRetain([NSURL fileURLWithPath:appPath]);
+    itemBeforeInsertion = kLSSharedFileListItemLast;
 }
 
 + (instancetype)loginItem
@@ -140,8 +143,10 @@ CFURLRef url;
         return;
     }
     
+    // If an item path has been specified as specific insertion point for the
+    // login item to add, then look for it.
     if(!LSSharedFileListInsertItemURL(loginItems,
-                                      kLSSharedFileListItemLast,
+                                      [self findInsertionPoint:loginItems],
                                       NULL,
                                       NULL,
                                       url,
@@ -150,6 +155,51 @@ CFURLRef url;
     {
         NSLog(@"Error: LSSharedFileListInsertItemURL failed, could not create login item.");
     }
+}
+
+- (LSSharedFileListItemRef)findInsertionPoint:(LSSharedFileListRef)loginItems
+{
+    if (itemBeforeInsertion)
+    {
+        return itemBeforeInsertion;
+    }
+    
+    // itemBeforePath
+    const LSSharedFileListItemRef found = [self findItemWithPath:loginItems withPath:itemBeforePath];
+    
+    if (found)
+    {
+        return found;
+    }
+    
+    NSLog(@"Warning: Could not find item with specified path.");
+    
+    // If no item with the specified path has been found, then the last position
+    // is returned.
+    return kLSSharedFileListItemLast;
+}
+
+- (LSSharedFileListItemRef)findItemWithPath:(LSSharedFileListRef)loginItems
+                                   withPath:(CFURLRef)path
+{
+    UInt32 seed;
+    CFArrayRef loginItemsArray = LSSharedFileListCopySnapshot(loginItems, &seed);
+    
+    for (id item in (__bridge NSArray *)loginItemsArray)
+    {
+        LSSharedFileListItemRef loginItem = (__bridge LSSharedFileListItemRef)item;
+        CFURLRef itemUrl;
+        
+        if (LSSharedFileListItemResolve(loginItem, 0, &itemUrl, NULL) == noErr)
+        {
+            if (CFEqual(itemUrl, path))
+            {
+                return loginItem;
+            }
+        }
+    }
+    
+    return nil;
 }
 
 - (void)removeLoginItem
@@ -183,6 +233,10 @@ CFURLRef url;
                     }
                 }
             }
+            else
+            {
+                NSLog(@"Warning: LSSharedFileListItemResolve failed, could not resolve item.");
+            }
         }
         
         if (!removed)
@@ -195,5 +249,48 @@ CFURLRef url;
         NSLog(@"Warning: could not get list of login items.");
     }
 }
+
+- (void)addAfterLast
+{
+    itemBeforeInsertion = kLSSharedFileListItemLast;
+    itemBeforePath = nil;
+}
+
+- (void)addAfterFirst
+{
+    itemBeforeInsertion = kLSSharedFileListItemBeforeFirst;
+    itemBeforePath = nil;
+}
+
+- (void)addAfterItemWithPath:(NSString *)path
+{
+    if (!path)
+    {
+        NSException* nullException = [NSException
+                                      exceptionWithName:@"NullPointerException"
+                                      reason:@"Path cannot be null."
+                                      userInfo:nil];
+        @throw nullException;
+    }
+    
+    itemBeforeInsertion = nil;
+    itemBeforePath = (CFURLRef)CFBridgingRetain([NSURL fileURLWithPath:path]);
+}
+
+- (void)addAfterBundle:(NSBundle *)bundle
+{
+    if (!bundle)
+    {
+        NSException* nullException = [NSException
+                                      exceptionWithName:@"NullPointerException"
+                                      reason:@"Bundle cannot be null."
+                                      userInfo:nil];
+        @throw nullException;
+    }
+
+    itemBeforeInsertion = nil;
+    itemBeforePath = (CFURLRef)CFBridgingRetain([NSURL fileURLWithPath:[bundle bundlePath]]);
+}
+
 
 @end
