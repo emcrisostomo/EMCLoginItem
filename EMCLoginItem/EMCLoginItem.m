@@ -165,7 +165,7 @@ CFURLRef itemBeforePath = nil;
     }
     
     // itemBeforePath
-    const LSSharedFileListItemRef found = [self findItemWithPath:loginItems withPath:itemBeforePath];
+    const LSSharedFileListItemRef found = [self findItem:loginItems withPath:itemBeforePath];
     
     if (found)
     {
@@ -179,7 +179,7 @@ CFURLRef itemBeforePath = nil;
     return kLSSharedFileListItemLast;
 }
 
-- (LSSharedFileListItemRef)findItemWithPath:(LSSharedFileListRef)loginItems
+- (LSSharedFileListItemRef)findItem:(LSSharedFileListRef)loginItems
                                    withPath:(CFURLRef)path
 {
     UInt32 seed;
