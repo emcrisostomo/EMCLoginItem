@@ -32,6 +32,7 @@ The methods implemented by the `EMCLoginItem` class are the following:
   * `- (void)addAfterFirst;`
   * `- (void)addAfterItemWithPath:(NSString *)path;`
   * `- (void)addAfterBundle:(NSBundle *)bundle;`
+  * `- (void)setIconRef:(IconRef)iconRef;`
 
 The first three methods are used to respectively query, add and remove a login
 item for the current user with the specified URL, as show in the following
@@ -51,6 +52,13 @@ will be added:
     specified path, if it exists, otherwise at the end of the item list.
   * `addAfterBundle` will add the login item after the item with the
     specified bundle, if it exists, otherwise at the end of the item list.
+
+The `setIconRef` path is used to pass an `IconRef` instance to be used as a
+custom icon for the login item to be added.  This method increases the IconRef
+reference count by 1 invoking the `AcquireIconRef` method if and only if the
+value to be set differs from the currently stored value (initially nil, and
+released if not nil).  The `dealloc` method takes care of releasing non-null
+IconRef references invoking the `ReleaseIconRef` method.
 
 Installation
 ------------

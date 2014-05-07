@@ -24,6 +24,7 @@
 - (void)addAfterFirst;
 - (void)addAfterItemWithPath:(NSString *)path;
 - (void)addAfterBundle:(NSBundle *)bundle;
+- (void)setIconRef:(IconRef)iconRef;
 
 + (instancetype)loginItem;
 + (instancetype)loginItemWithBundle:(NSBundle *)bundle;

@@ -12,10 +12,12 @@
 #import "EMCLoginItem.h"
 
 @implementation EMCLoginItem
-
-CFURLRef url;
-LSSharedFileListItemRef itemBeforeInsertion = nil;
-CFURLRef itemBeforePath = nil;
+{
+    CFURLRef url;
+    LSSharedFileListItemRef itemBeforeInsertion;
+    CFURLRef itemBeforePath;
+    IconRef _iconRef;
+}
 
 - (id)init
 {
@@ -28,6 +30,14 @@ CFURLRef itemBeforePath = nil;
     }
     
     return self;
+}
+
+- (void)dealloc
+{
+    if (_iconRef)
+    {
+        ReleaseIconRef(_iconRef);
+    }
 }
 
 - (instancetype)initWithBundle:(NSBundle *)bundle
@@ -94,6 +104,29 @@ CFURLRef itemBeforePath = nil;
     return [[EMCLoginItem alloc] initWithPath:path];
 }
 
+- (void)setIconRef:(IconRef)iconRef
+{
+    if (_iconRef == iconRef)
+    {
+        return;
+    }
+    
+    if (_iconRef)
+    {
+        ReleaseIconRef(_iconRef);
+    }
+    
+    if (AcquireIconRef(iconRef) == noErr)
+    {
+        _iconRef = iconRef;
+    }
+    else
+    {
+        NSLog(@"Error: Cannot acquire IconRef.");
+        _iconRef = nil;
+    }
+}
+
 - (BOOL)isLoginItem
 {
     LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL,
@@ -148,7 +181,7 @@ CFURLRef itemBeforePath = nil;
     if(!LSSharedFileListInsertItemURL(loginItems,
                                       [self findInsertionPoint:loginItems],
                                       NULL,
-                                      NULL,
+                                      _iconRef,
                                       url,
                                       NULL,
                                       NULL))
@@ -291,6 +324,5 @@ CFURLRef itemBeforePath = nil;
     itemBeforeInsertion = nil;
     itemBeforePath = (CFURLRef)CFBridgingRetain([NSURL fileURLWithPath:[bundle bundlePath]]);
 }
-
 
 @end
