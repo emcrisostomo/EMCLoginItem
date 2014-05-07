@@ -45,6 +45,8 @@
 		901E56EE1916CC1500D47DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		901E56F01916CC1500D47DF1 /* EMCLoginItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMCLoginItemTests.m; sourceTree = "<group>"; };
 		90289B88191A295D00608349 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		906AA3B0191ACB91007B78FA /* LICENSE.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = LICENSE.html; path = ../LICENSE.html; sourceTree = "<group>"; };
+		906AA3B1191ACB91007B78FA /* README.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = README.html; path = ../README.html; sourceTree = "<group>"; };
 		90F52BEE191A26A800E89D7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,8 @@
 				901E56DB1916CC1500D47DF1 /* EMCLoginItem-Prefix.pch */,
 				901E56D81916CC1500D47DF1 /* InfoPlist.strings */,
 				90289B88191A295D00608349 /* LICENSE */,
+				906AA3B0191ACB91007B78FA /* LICENSE.html */,
+				906AA3B1191ACB91007B78FA /* README.html */,
 				90F52BEE191A26A800E89D7E /* README.md */,
 			);
 			name = "Supporting Files";
