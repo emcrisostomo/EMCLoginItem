@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="2">
+    <title>EMCLoginItem</title>
+    <pkg-ref id="com.blogspot.thegreyblog.EMCLoginItem"/>
+    <options customize="never" require-scripts="false"/>
+    <readme file="README.html"/>
+    <license file="LICENSE.html"/>
+    <volume-check>
+        <allowed-os-versions>
+            <os-version min="10.9"/>
+        </allowed-os-versions>
+    </volume-check>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.blogspot.thegreyblog.EMCLoginItem"/>
+        </line>
+    </choices-outline>
+    <choice id="default"/>
+    <choice id="com.blogspot.thegreyblog.EMCLoginItem" visible="false">
+        <pkg-ref id="com.blogspot.thegreyblog.EMCLoginItem"/>
+    </choice>
+    <pkg-ref id="com.blogspot.thegreyblog.EMCLoginItem" version="1.0.0" onConclusion="none">EMCLoginItemComponent.pkg</pkg-ref>
+</installer-gui-script>
