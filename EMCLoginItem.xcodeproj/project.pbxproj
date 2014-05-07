@@ -44,6 +44,8 @@
 		901E56EC1916CC1500D47DF1 /* EMCLoginItemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EMCLoginItemTests-Info.plist"; sourceTree = "<group>"; };
 		901E56EE1916CC1500D47DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		901E56F01916CC1500D47DF1 /* EMCLoginItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMCLoginItemTests.m; sourceTree = "<group>"; };
+		90289B88191A295D00608349 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		90F52BEE191A26A800E89D7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				901E56D71916CC1400D47DF1 /* EMCLoginItem-Info.plist */,
-				901E56D81916CC1500D47DF1 /* InfoPlist.strings */,
 				901E56DB1916CC1500D47DF1 /* EMCLoginItem-Prefix.pch */,
+				901E56D81916CC1500D47DF1 /* InfoPlist.strings */,
+				90289B88191A295D00608349 /* LICENSE */,
+				90F52BEE191A26A800E89D7E /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -349,7 +353,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DSTROOT = /;
+				DSTROOT = "/tmp/$(PROJECT_NAME).dst";
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
