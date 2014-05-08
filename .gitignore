@@ -2,6 +2,7 @@
 # https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 #
 build/
+*.pkg
 *.pbxuser
 !default.pbxuser
 *.mode1v3
