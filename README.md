@@ -60,6 +60,16 @@ value to be set differs from the currently stored value (initially nil, and
 released if not nil).  The `dealloc` method takes care of releasing non-null
 IconRef references invoking the `ReleaseIconRef` method.
 
+Installation with Cocoapods
+---------------------------
+
+`EMCLoginItem` is also available through [CocoaPods][cocoapods] and a
+dependency to it can be added to your Podfile:
+
+    pod 'EMCLoginItem' ~> '1.0'
+
+[cocoapods]: http://cocoapods.org
+
 Installation
 ------------
 
@@ -87,16 +97,6 @@ Please beware that since the package is _not_
 signed, you will have to temporarily allow installation for applications
 downloaded from _Anywhere_ in the _Security & Privay_ section in
 _System Preferences_.
-
-Installation with Cocoapods
----------------------------
-
-`EMCLoginItem` is also available through [CocoaPods][cocoapods] and a
-dependency to it can be added to your Podfile:
-
-    pod 'EMCLoginItem' ~> '1.0'
-
-[cocoapods]: http://cocoapods.org
 
 License
 -------
