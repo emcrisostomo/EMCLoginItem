@@ -88,6 +88,16 @@ signed, you will have to temporarily allow installation for applications
 downloaded from _Anywhere_ in the _Security & Privay_ section in
 _System Preferences_.
 
+Installation with Cocoapods
+---------------------------
+
+`EMCLoginItem` is also available through [CocoaPods][cocoapods] and a
+dependency to it can be added to your Podfile:
+
+    pod 'EMCLoginItem' ~> '1.0'
+
+[cocoapods]: http://cocoapods.org
+
 License
 -------
 
