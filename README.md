@@ -60,7 +60,7 @@ value to be set differs from the currently stored value (initially nil, and
 released if not nil).  The `dealloc` method takes care of releasing non-null
 IconRef references invoking the `ReleaseIconRef` method.
 
-Installation with Cocoapods
+Installation with CocoaPods
 ---------------------------
 
 `EMCLoginItem` is also available through [CocoaPods][cocoapods] and a
