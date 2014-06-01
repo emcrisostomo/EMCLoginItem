@@ -73,6 +73,11 @@
         released if not nil).  The <code>dealloc</code> method takes care of releasing non-null
         IconRef references invoking the <code>ReleaseIconRef</code> method.</p>
         
+        <h2>Prerequisites</h2>
+        
+        <p>This library requires <a href="http://en.wikipedia.org/wiki/Automatic_Reference_Counting">ARC</a> (<em>Automatic Reference Counting</em>) and
+        compilation will fail if ARC support is not available.</p>
+        
         <h2>Installation with CocoaPods</h2>
         
         <p><code>EMCLoginItem</code> is also available through <a href="http://cocoapods.org">CocoaPods</a> and a

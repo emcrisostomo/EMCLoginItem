@@ -60,6 +60,14 @@ value to be set differs from the currently stored value (initially nil, and
 released if not nil).  The `dealloc` method takes care of releasing non-null
 IconRef references invoking the `ReleaseIconRef` method.
 
+Prerequisites
+-------------
+
+This library requires [ARC][arc] (_Automatic Reference Counting_) and
+compilation will fail if ARC support is not available.
+
+[arc]: http://en.wikipedia.org/wiki/Automatic_Reference_Counting
+
 Installation with CocoaPods
 ---------------------------
 

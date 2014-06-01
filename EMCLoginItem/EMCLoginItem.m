@@ -11,6 +11,10 @@
 
 #import "EMCLoginItem.h"
 
+#if !__has_feature(objc_arc)
+#error This class requires ARC support to be enabled.
+#endif
+
 @implementation EMCLoginItem
 {
     CFURLRef url;
