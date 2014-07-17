@@ -74,7 +74,7 @@ Installation with CocoaPods
 `EMCLoginItem` is also available through [CocoaPods][cocoapods] and a
 dependency to it can be added to your Podfile:
 
-    pod 'EMCLoginItem' '~> 1.0'
+    pod 'EMCLoginItem', '~> 1.0'
 
 [cocoapods]: http://cocoapods.org
 
