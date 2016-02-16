@@ -82,9 +82,9 @@ Installation
 ------------
 
 `EMCLoginItem` is packaged and distributed as a _framework_.  Developers who
-want to compile it from source may either use XCode (a project called
+want to compile it from source may either use Xcode (a project called
 `EMCLoginItem.xcodeproj` is included in the sources) or `xcodebuild`.  Once the
-framework is installed it can be referenced and linked from any other XCode
+framework is installed it can be referenced and linked from any other Xcode
 project.
 
 The best place to install public frameworks is in `/Library/Frameworks` since
