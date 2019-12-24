@@ -149,7 +149,7 @@
             
             if (LSSharedFileListItemResolve(loginItem, 0, &itemUrl, NULL) == noErr)
             {
-                if (CFEqual(itemUrl, url))
+                if (itemUrl && CFEqual(itemUrl, url))
                 {
                     return YES;
                 }
